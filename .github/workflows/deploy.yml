@@ -50,12 +50,11 @@ jobs:
           npm run build
           cd ..
           cp -r frontend/build/* src/main/resources/static/
-
       
       # heroku에 배포하기
       - name: deploy to heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "mount-test" #
-          heroku_email: "skdksldk1485@naver.com"
+          heroku_app_name: "santadainfo" #
+          heroku_email: "songmi134@gmail.com"
