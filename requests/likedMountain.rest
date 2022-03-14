@@ -1,0 +1,27 @@
+
+### liked Mountain(Success)
+
+
+
+POST http://localhost:8080/likes/me/mountains
+Authorization: Bearer test2
+Content-Type: application/json
+
+{
+    "mountainNo" : 5
+}
+
+
+
+### Get MountainList(Success)
+GET http://localhost:8080/likes/me/mountains
+Authorization: Bearer test1
+Content-Type: application/json
+
+
+
+
+### Delete Mountain(Success)
+DELETE http://localhost:8080/likes/me/mountains/2
+Authorization: Bearer test
+Content-Type: application/json

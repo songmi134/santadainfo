@@ -1,0 +1,35 @@
+
+### Post MTComment(Success)
+
+POST http://localhost:8080/mountains/3/comments
+Authorization: Bearer test1
+Content-Type: application/json
+
+{
+
+    "content" : "3댓"
+
+}
+
+
+### Delete MTComment(Success)
+
+DELETE http://localhost:8080/mountains/3/comments/38
+Authorization: Bearer test1
+Content-Type: application/json
+
+
+
+
+### Update MTComment(Success)
+
+PATCH  http://localhost:8080/mountains/1/comments/37
+Authorization: Bearer test1
+Content-Type: application/json
+
+
+{
+
+    "content" : "수정수정수정댓"
+
+}

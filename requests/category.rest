@@ -1,0 +1,8 @@
+
+
+### Get categoryList(Success)
+
+GET  http://localhost:8080/categories
+Authorization: Bearer test
+Content-Type: application/json
+

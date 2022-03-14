@@ -1,0 +1,44 @@
+
+### Post Comminity(Success)
+
+POST http://localhost:8080/communities/43/comments
+Authorization: Bearer test1
+Content-Type: application/json
+
+{
+    "content" : "댓글수정***"
+}
+
+
+GET http://localhost:8080/communities/43
+Authorization: Bearer test
+Content-Type: application/json
+
+
+### Get ComminityComments(Success)
+GET http://localhost:8080/communities/53/comments
+Authorization: Bearer test
+Content-Type: application/json
+
+
+
+
+
+### Delete ComminityComments(Success)
+DELETE http://localhost:8080/communities/53/comments/30
+Authorization: Bearer test2
+Content-Type: application/json
+
+
+
+
+
+### UPDATE Comminity details(Success)
+PATCH  http://localhost:8080/communities/53/comments/26
+Authorization: Bearer test1
+Content-Type: application/json
+
+{
+    "content" : "댓글수정***"
+}
+
