@@ -34,7 +34,7 @@ jobs:
       - name: checkout frontend
         uses: actions/checkout@v2
         with:
-          repository: songmi134/santada2
+          repository: skdksldk1485/React_Movie
           path: ./frontend
 
       
