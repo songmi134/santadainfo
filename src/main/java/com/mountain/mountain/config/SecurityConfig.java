@@ -28,11 +28,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.csrf().disable() // CSRF 보호기능 disable
-                .authorizeRequests() // 요청에 대한 권한 지정
+                .authorizeRequests() // 요청에대한 권한 지정
                 .anyRequest().authenticated() // 모든 요청이 인증되어야한다.
                 .and()
-                .addFilterBefore(authFilterContainer.getFilter(),
-                        UsernamePasswordAuthenticationFilter.class);
+                .exceptionHandling() // 예외처리 기능 작동
+                .authenticationEntryPoint(new HttpStatusEntryPoint(HttpStatus.UNAUTHORIZED)); // 인증실패시처리
     };
 
     @Override
