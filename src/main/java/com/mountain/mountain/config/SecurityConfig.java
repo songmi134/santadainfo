@@ -41,6 +41,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         web.ignoring().antMatchers(HttpMethod.POST, "/users")
                 .antMatchers("/")
+                .antMatchers("/login")
+                .antMatchers("/mountain/**")
+                .antMatchers("/community/**")
+                .antMatchers("/my")
                 .antMatchers(HttpMethod.GET ,"/mountains")
                 .antMatchers(HttpMethod.GET ,"/mountains/**")
                 .antMatchers(HttpMethod.GET, "/categories")
@@ -54,9 +58,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/fonts/**")
                 .antMatchers("/vendor/**")
                 .antMatchers("/favicon.ico")
-                .antMatchers("/**")
                 .antMatchers("/pages/**")
-            ;
+        ;
     }
 
 }
