@@ -34,7 +34,7 @@ jobs:
       - name: checkout frontend
         uses: actions/checkout@v2
         with:
-          repository: songmi134/santada-1
+          repository: songmi134/santada2
           path: ./frontend
 
       
